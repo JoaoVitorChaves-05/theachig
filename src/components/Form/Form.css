@@ -1,0 +1,104 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    max-width: 100vw;
+}
+
+.form {
+    max-width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.form .form-type-field {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.form .form-type-field button {
+    cursor: pointer;
+    margin-top: 5px;
+
+    border: 1px solid var(--cor-principal);
+    padding: 10px;
+    border-radius: 10px;
+
+    color: var(--cor-principal);
+    font-size: 1.0rem;
+
+    transition: all 0.2s;
+
+    width: 120px;
+
+    background-color: white;
+}
+
+.form .form-type-field .btn-active {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.form .form-create-user-field {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form .form-create-user-field input {
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form .form-create-user-field #photo {
+    border: none;
+}
+
+.form .form-create-user-field textarea {
+    resize: none;
+
+    height: 80px;
+}
+
+.form .form-create-user-field input, .form .form-create-user-field textarea {
+    padding: 5px;
+    font-size: 1.0rem;
+
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.form .form-create-user-field input:focus, .form .form-create-user-field textarea:focus {
+    border: 1px solid var(--cor-principal);
+}
+
+.form .form-create-user-field button[type="submit"] {
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: var(--cor-principal);
+
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 1.0rem;
+
+    transition: all 0.6s;
+}
+
+.form .form-create-user-field button[type="submit"]:hover {
+    background-color: var(--cor-principal-hover)
+}

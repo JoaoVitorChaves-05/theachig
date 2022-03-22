@@ -1,0 +1,110 @@
+.rating-content {
+    border-top: 1px solid var(--cor-principal);
+    display: flex;
+
+    flex-direction: column;
+}
+
+.rating-content .rating-input-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rating-content .rating-input-comment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-content .rating-input-comment form textarea {
+    font-family: 'Nunito', sans-serif;
+    height: 80px;
+    padding: 5px;
+
+    resize: none;
+}
+
+.rating-content .rating-input-comment form input,
+.rating-content .rating-input-comment form textarea {
+    font-size: 1.0rem;
+
+    border-radius: 10px;
+    border: 1px solid gray;
+
+    margin-bottom: 5px;
+}
+
+.rating-content .rating-input-comment form button {
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: var(--cor-principal);
+
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    color: white;
+    font-size: 1.0rem;
+
+    transition: all 0.6s;
+}
+
+.rating-content .rating-input-comment form button:hover {
+    background-color: var(--cor-principal-hover)
+}
+
+.rating-content .rating-input-comment form input {
+    font-family: 'Nunito', sans-serif;
+    height: 40px;
+    padding: 5px;
+}
+
+.rating-content .rating-input-comment form input:focus,
+.rating-content .rating-input-comment form textarea:focus {
+    border: 1px solid var(--cor-principal);
+}
+
+.rating-content .rating-title-field {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    color: var(--cor-principal);
+}
+
+.rating-content .rating-comment-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 10px;
+}
+
+.rating-content .rating-comment-area .rating-comment-field {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 800px) {
+    .rating-content .rating-input-comment form {
+        width: 800px;
+    }
+
+    .rating-content .rating-comment-area .rating-comment-field {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .rating-content .rating-input-comment form {
+        width: 95%;
+    }
+
+    .rating-content .rating-comment-area .rating-comment-field {
+        width: 95%;
+    }
+}

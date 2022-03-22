@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid var(--cor-principal);
+    background-color:rgb(251, 251, 251);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation .create-user, .navigation .login-button {
+    text-decoration: none;
+
+}
+
+.navigation .create-user {
+    color: var(--cor-principal);
+    margin-right: 5px;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.navigation .login-button {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    margin-left: 5px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 10px;
+
+    text-align: center;
+    transition: all 0.6s;
+}
+
+.navigation .login-button:hover {
+    background-color: var(--cor-principal-hover)
+}
+
+.title {
+    color: var(--cor-principal);
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        flex-direction: column;
+    }
+
+    .navigation {
+        margin-top: 5px;
+    }
+}

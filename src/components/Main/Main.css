@@ -1,0 +1,37 @@
+.main-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.main-content .footer-content {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    border-top: 1px solid var(--cor-principal);
+    border-bottom: 1px solid var(--cor-principal);
+}
+
+.main-content .footer-content .footer-field-content button {
+    color: rgb(119, 119, 119);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+
+    transition: all 600ms;
+}
+
+.main-content .footer-content .footer-field-content button:hover {
+    color: black;
+}
+
+.cards-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}

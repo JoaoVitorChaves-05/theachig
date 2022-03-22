@@ -1,0 +1,103 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.profile-container .profile-form {
+    padding: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container .profile-form .profile-form-field {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 5px;
+}
+
+.profile-container .profile-form .profile-form-field input[type="file"] {
+    border: none;
+}
+
+.profile-container .profile-form .profile-form-field input[type="file"]:focus {
+    border: none;
+}
+
+.profile-container .profile-form .profile-form-field input {
+    height: 40px;
+    font-size: 1.0rem;
+    width: 600px;
+
+    padding: 5px;
+}
+
+.profile-container .profile-form .profile-form-field textarea {
+    padding: 5px;
+    resize: none;
+
+    height: 80px;
+    width: 600px;
+}
+
+.profile-container .profile-form .profile-form-field input,
+.profile-container .profile-form .profile-form-field textarea {
+    padding: 5px;
+    font-size: 1.0rem;
+
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.profile-container .profile-form .profile-form-field input:focus,
+.profile-container .profile-form .profile-form-field textarea:focus {
+    border: 1px solid var(--cor-principal);
+}
+
+.profile-container .profile-form .profile-form-field button {
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: var(--cor-principal);
+
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 1.0rem;
+
+    transition: all 0.6s;
+    width: 600px;
+}
+
+.profile-container .profile-form .profile-form-field button:hover {
+    background-color: var(--cor-principal-hover)
+}
+
+.profile-container .profile-form .profile-form-field .btn-delete {
+    background-color: var(--cor-delete);
+}
+
+.profile-container .profile-form .profile-form-field .btn-delete:hover {
+    background-color: var(--cor-delete-hover);
+}
+
+@media screen and (max-width: 600px) {
+    .profile-container .profile-form .profile-form-field {
+        width: 100%;
+    }
+
+    .profile-container .profile-form .profile-form-field input,
+    .profile-container .profile-form .profile-form-field textarea,
+    .profile-container .profile-form .profile-form-field button {
+        width: 100%;
+    }
+}
